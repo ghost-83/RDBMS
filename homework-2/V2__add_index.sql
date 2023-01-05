@@ -1,0 +1,12 @@
+CREATE INDEX IF NOT EXISTS core_user_login_idx ON core."user" (login);
+CREATE INDEX IF NOT EXISTS core_user_email_idx ON core."user" (email);
+CREATE INDEX IF NOT EXISTS reference_book_title_idx ON data.reference_book (title);
+CREATE INDEX IF NOT EXISTS reference_book_category_idx ON data.reference_book (category);
+CREATE INDEX IF NOT EXISTS post_title_idx ON data.post (title);
+CREATE INDEX IF NOT EXISTS post_category_idx ON data.post (category);
+CREATE INDEX IF NOT EXISTS g_file_name_idx ON g_file.g_file (name);
+CREATE INDEX IF NOT EXISTS g_file_category_idx ON g_file.g_file (category);
+CREATE INDEX IF NOT EXISTS movie_title_idx ON media.movie (title);
+CREATE INDEX IF NOT EXISTS movie_category_idx ON media.movie (category);
+CREATE INDEX IF NOT EXISTS music_name_idx ON media.music (name);
+CREATE INDEX IF NOT EXISTS music_genre_idx ON media.music (genre);
