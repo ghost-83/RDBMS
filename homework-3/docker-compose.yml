@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  ###############################################################################################################
+  #   POSTGRES
+  ###############################################################################################################
+
+  postgres:
+    image: postgres:14.2
+    container_name: postgres
+    restart: always #Перезапуск всегда
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ghost
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://0.0.0.0:12205
+        tag: postgres
