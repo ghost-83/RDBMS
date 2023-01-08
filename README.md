@@ -8,3 +8,4 @@
 
 - [01. Проектирование БД.](https://github.com/ghost-83/RDBMS/tree/main/homework-1)
 - [02. Компоненты современной СУБД.](https://github.com/ghost-83/RDBMS/tree/main/homework-2)
+- [03. Внутренняя архитектура СУБД PostgreSQL.](https://github.com/ghost-83/RDBMS/tree/main/homework-3)
