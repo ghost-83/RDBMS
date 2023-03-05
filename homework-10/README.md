@@ -129,3 +129,7 @@ CREATE TABLE IF NOT EXISTS music
     active    BOOLEAN               DEFAULT TRUE
     );
 ```
+
++ Результат.
++ 
+![:](imaje.png)
