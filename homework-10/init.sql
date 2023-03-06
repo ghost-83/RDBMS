@@ -132,3 +132,31 @@ VALUES ('ghost_83', '8766EDA20B0991F76FEAD173B0E41296', 'admin', 'ghost_83@mail.
         'ADMIN', '2021-11-09', '2021-11-09', true),
        ('ghost', '8766EDA20B0991F76FEAD173B0E41296', 'ghost', 'ghost1783@gmail.com',
         'USER', '2021-11-09', '2021-11-09', true);
+
+# Добавление записи с обьектом JSON
+
+INSERT INTO movie(title, text, group_code, url_file, category, user_id, created, active)
+VALUES ('Человек-муравей и Оса',
+        '<p class="gp">Скотт Лэнг, известный также как Человек-муравей, уже заслужил право оказаться в команде Мстителей. Но желание быть ближе к дочери удерживает его в родном Сан-Франциско – до тех пор, пока доктор Хэнк Пим, создавший когда-то изменяющий размеры своего владельца чудо-костюм, не призывает Скотта присоединиться к новой опасной миссии. А помогать в противостоянии с коварным врагом Человеку-муравью будет новая напарница – Оса.</p>',
+        10002,
+        '{"image": "Ant-man_and_Wasp.webp", "movie": "Ant-man_and_Wasp.mp4", "poster": "Ant-man_and_Wasp_poster.jpg", "movieEng": null}',
+        'fantastic',
+        1,
+        '2021-11-09',
+        true),
+       ('Пираты Карибского моря: Проклятие Черной жемчужины',
+        '<p class="gp">Жизнь харизматичного авантюриста, капитана Джека Воробья, полная увлекательных приключений, резко меняется, когда его заклятый враг капитан Барбосса похищает корабль Джека Черную Жемчужину, а затем нападает на Порт Ройал и крадет прекрасную дочь губернатора Элизабет Свонн.</p><p class="gp">Друг детства Элизабет Уилл Тернер вместе с Джеком возглавляет спасательную экспедицию на самом быстром корабле Британии, чтобы вызволить девушку и заодно отобрать у злодея Черную Жемчужину. Вслед за этой парочкой отправляется амбициозный коммодор Норрингтон, который к тому же числится женихом Элизабет.</p><p class="gp">Однако Уилл не знает, что над Барбоссой висит вечное проклятие, при лунном свете превращающее его с командой в живых скелетов. Проклятье будет снято лишь тогда, когда украденное золото Ацтеков будет возвращено пиратами на старое место.</p>',
+        20001,
+        '{"image": "Pirates_of_the_Caribbean_The_Curse_of_the_Black_Pearl_1080p.webp", "movie": "Pirates_of_the_Caribbean_The_Curse_of_the_Black_Pearl_1080p.mp4", "poster": "Pirates_of_the_Caribbean_The_Curse_of_the_Black_Pearl_1080p_poster.jpg", "movieEng": "Pirates_of_the_Caribbean_The_Curse_of_the_Black_Pearl_1080p_ENG.mp4"}',
+        'adventures',
+        1,
+        '2021-11-09',
+        true);
+
+SELECT JSON_EXTRACT(url_file, '$.movieEng') AS extract,
+       url_file ->'$.movieEng' IS NOT NULL AS test_1,
+      url_file ->>'$.movieEng' IS NOT NULL AS test_2
+FROM movie
+WHERE JSON_VALID(url_file)
+AND url_file ->'$.movieEng' IS NOT NULL
+AND JSON_EXTRACT(url_file, '$.movieEng') IS NOT NULL;
