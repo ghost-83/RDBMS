@@ -18,4 +18,6 @@
 - [10. Типы данных.](https://github.com/ghost-83/RDBMS/tree/main/homework-10)
 - [11. SQL выборка.](https://github.com/ghost-83/RDBMS/tree/main/homework-11)
 - [12. Транзакции.](https://github.com/ghost-83/RDBMS/tree/main/homework-12)
+- [13. Создаем отчетную выборку.](https://github.com/ghost-83/RDBMS/tree/main/homework-13)
+- [14. Индексы.](https://github.com/ghost-83/RDBMS/tree/main/homework-14)
 
