@@ -21,4 +21,5 @@
 - [13. Создаем отчетную выборку.](https://github.com/ghost-83/RDBMS/tree/main/homework-13)
 - [14. Индексы.](https://github.com/ghost-83/RDBMS/tree/main/homework-14)
 - [15. Анализ и профилирование запроса.](https://github.com/ghost-83/RDBMS/tree/main/homework-15)
+- [16. Добавляем в базу хранимые процедуры и триггеры.](https://github.com/ghost-83/RDBMS/tree/main/homework-16)
 
