@@ -8,7 +8,7 @@
 
 ## Описание задание
 
-+ Группировки с ипользованием CASE, HAVING, ROLLUP, GROUPING().
++ Группировки с использованием CASE, HAVING, ROLLUP, GROUPING().
 
 ## Реализация
 
