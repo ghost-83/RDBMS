@@ -23,7 +23,7 @@ FROM ghost.g_file gg
          INNER JOIN user u ON gg.user_name = u.name AND u.active = false;
 ```
 
-+ Получени все заметок созданных определенной группой.
++ Получение все заметок созданных определенной группой.
 
 ```SQL
 SELECT grb.*
@@ -32,7 +32,7 @@ FROM ghost.reference_book grb
 WHERE gu.role = 'ADMIN';
 ```
 
-+ Получени все заметок созданных определенным пользователем.
++ Получение все заметок созданных определенным пользователем.
 
 ```SQL
 SELECT grb.*
@@ -41,7 +41,7 @@ FROM ghost.reference_book grb
 WHERE gu.name = 'ghost';
 ```
 
-+ Получени отсортированных песен определенной категории.
++ Получение отсортированных песен определенной категории.
 
 ```SQL
 SELECT *
@@ -50,7 +50,7 @@ WHERE gm.genre = 'rook'
 ORDER BY gm.sorted;
 ```
 
-+ Получени количества фильмов по категории.
++ Получение количества фильмов по категории.
 
 ```SQL
 SELECT category, count(*) AS quantity
@@ -58,7 +58,7 @@ FROM ghost.movie gm
 GROUP BY gm.category;
 ```
 
-+ Получени фильмов по названию.
++ Получение фильмов по названию.
 
 ```SQL
 SELECT *
@@ -66,7 +66,7 @@ FROM ghost.movie gm
 WHERE gm.title LIKE '%test%';
 ```
 
-+ Получени постов только активных пользователей.
++ Получение постов только активных пользователей.
 
 ```SQL
 SELECT gp.*
