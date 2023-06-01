@@ -22,4 +22,8 @@
 - [14. Индексы.](https://github.com/ghost-83/RDBMS/tree/main/homework-14)
 - [15. Анализ и профилирование запроса.](https://github.com/ghost-83/RDBMS/tree/main/homework-15)
 - [16. Добавляем в базу хранимые процедуры и триггеры.](https://github.com/ghost-83/RDBMS/tree/main/homework-16)
+- [17. Восстановить таблицу из бэкапа.](https://github.com/ghost-83/RDBMS/tree/main/homework-17)
+- [18. Спрогнозировать рост данных и спроектировать модель хранения и архивации.](https://github.com/ghost-83/RDBMS/tree/main/homework-18)
+- [19. Строим модель данных.](https://github.com/ghost-83/RDBMS/tree/main/homework-19)
+- [20. MongoDB.](https://github.com/ghost-83/RDBMS/tree/main/homework-20)
 
