@@ -26,4 +26,5 @@
 - [18. Спрогнозировать рост данных и спроектировать модель хранения и архивации.](https://github.com/ghost-83/RDBMS/tree/main/homework-18)
 - [19. Строим модель данных.](https://github.com/ghost-83/RDBMS/tree/main/homework-19)
 - [20. MongoDB.](https://github.com/ghost-83/RDBMS/tree/main/homework-20)
+- [21. Проектная работа.](https://github.com/ghost-83/RDBMS/tree/main/project-work)
 
